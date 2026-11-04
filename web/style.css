@@ -1,0 +1,80 @@
+:root {
+  color-scheme: dark; /* dark scrollbars and form controls too */
+  --bg: #1a1b1e;
+  --fg: #d8dae0;
+  --fg-muted: #9a9ea8;
+  --link: #8ab4f8;
+  --code-bg: #25272c;
+  --border: #3a3d44;
+  --error: #ff6b6b;
+}
+
+html {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+body {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--link);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #f0f1f4;
+}
+
+blockquote {
+  margin-left: 0;
+  padding-left: 1em;
+  border-left: 3px solid var(--border);
+  color: var(--fg-muted);
+}
+
+code,
+pre {
+  background: var(--code-bg);
+  border-radius: 4px;
+}
+code {
+  padding: 0.1em 0.3em;
+}
+pre {
+  padding: 0.8em 1em;
+  overflow-x: auto;
+}
+pre code {
+  padding: 0;
+  background: none;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 0.4em 0.8em;
+}
+
+.math-block {
+  text-align: center;
+  margin: 1em 0;
+  overflow-x: auto;
+}
+.math-error {
+  color: var(--error);
+}

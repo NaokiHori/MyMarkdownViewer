@@ -1,0 +1,27 @@
+{
+  "name": "my-markdown-viewer",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fmt:check": "oxfmt --check src web tsconfig.json package.json .oxlintrc.json",
+    "lint": "oxlint --type-aware --type-check src && oxlint web",
+    "start": "node src/server.ts",
+    "test": "node --test src/*.test.ts",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "katex": "^0.19.1",
+    "marked": "^18.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "oxfmt": "^0.75.0",
+    "oxlint": "^1.90.0",
+    "oxlint-tsgolint": "^7.0.2005",
+    "typescript": "^7.0.2"
+  },
+  "optionalDependencies": {
+    "@typescript/typescript-linux-arm64": "^7.0.2"
+  }
+}
